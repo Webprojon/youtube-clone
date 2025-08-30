@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>YouTube Redesign - Home</title>
+		<title>YouTube - Home</title>
 		<link rel="stylesheet" href="./css/style.css" />
 		<link href="https://fonts.googleapis.com/css2?family=Muli:wght@400;700&display=swap" rel="stylesheet" />
 	</head>
@@ -45,11 +45,17 @@
 		<!-- Mobile Header -->
 		<header class="mobile_header">
 			<a href="/home.html" aria-label="YouTube Home">
-				<img class="navbar_logo" src="./assests/images/logo.svg" alt="YouTube Logo" />
+				<img class="mobile_header-logo" src="./assests/images/logo.svg" alt="YouTube Logo" />
 			</a>
-			<button class="search_btn" aria-label="Search">
-				<img src="./assests/icons/search-icon.svg" alt="search icon" />
-			</button>
+
+			<div class="mobile_header-right">
+				<button aria-label="Search">
+					<img src="./assests/icons/search-icon.svg" alt="search icon" />
+				</button>
+				<button aria-label="User profile">
+					<img class="navbar_avatar" src="./assests/images/avatar-img.svg" alt="Your profile picture" />
+				</button>
+			</div>
 		</header>
 
 		<main class="container">
@@ -143,7 +149,7 @@
 
 			<section class="content">
 				<!-- First Channel Section -->
-				<div class="channel_section">
+				<section class="channel_section">
 					<div class="channel_header">
 						<div class="channel_info">
 							<img src="./assests/images/channel-avatar-1.svg" alt="Dollie Blair" />
@@ -239,7 +245,7 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				</section>
 
 				<!-- Recommended Section -->
 				<section class="recommended_section">
@@ -299,7 +305,7 @@
 				</section>
 
 				<!-- Second Channel Section -->
-				<div class="channel_section">
+				<section class="channel_section">
 					<div class="channel_header">
 						<div class="channel_info">
 							<img src="./assests/images/channel-avatar-2.svg" alt="Food & Drink" />
@@ -335,7 +341,6 @@
 								</div>
 							</div>
 						</div>
-
 						<div class="video_card">
 							<div class="video_thumbnail">
 								<img src="./assests/images/channel-img-2.svg" alt="Advertising Outdoors" />
@@ -349,7 +354,6 @@
 								</div>
 							</div>
 						</div>
-
 						<div class="video_card">
 							<div class="video_thumbnail">
 								<img src="./assests/images/channel-img-3.svg" alt="Radio Astronomy" />
@@ -363,7 +367,6 @@
 								</div>
 							</div>
 						</div>
-
 						<div class="video_card">
 							<div class="video_thumbnail">
 								<img src="./assests/images/channel-img-4.svg" alt="A Good Autoresponder" />
@@ -377,7 +380,6 @@
 								</div>
 							</div>
 						</div>
-
 						<div class="video_card">
 							<div class="video_thumbnail">
 								<img src="./assests/images/channel-img-5.svg" alt="Baby Monitor Technology" />
@@ -391,7 +393,6 @@
 								</div>
 							</div>
 						</div>
-
 						<div class="video_card">
 							<div class="video_thumbnail">
 								<img src="./assests/images/channel-img-6.svg" alt="Asteroids" />
@@ -406,28 +407,28 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				</section>
 			</section>
 		</main>
 
 		<!-- Mobile Navigation Bar -->
 		<nav class="mobile_nav">
-			<div class="mobile_nav_item active">
+			<a class="mobile_nav_item active" href="#home">
 				<img src="./assests/icons/home-icon.svg" alt="home" />
-				<span>Home</span>
-			</div>
-			<div class="mobile_nav_item">
+				Home
+			</a>
+			<a class="mobile_nav_item" href="#trending">
 				<img src="./assests/icons/trending-icon.svg" alt="trending" />
-				<span>Trending</span>
-			</div>
-			<div class="mobile_nav_item">
+				Trending
+			</a>
+			<a class="mobile_nav_item" href="#subscriptions">
 				<img src="./assests/icons/subscriptions-icon.svg" alt="subscriptions" />
-				<span>Subscriptions</span>
-			</div>
-			<div class="mobile_nav_item">
+				Subscriptions
+			</a>
+			<a class="mobile_nav_item" href="#library">
 				<img src="./assests/icons/library-icon.svg" alt="library" />
-				<span>Library</span>
-			</div>
+				Library
+			</a>
 		</nav>
 	</body>
 </html>
