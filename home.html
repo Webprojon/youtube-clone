@@ -3,42 +3,57 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Home Page</title>
+		<title>YouTube Redesign - Home</title>
 		<link rel="stylesheet" href="./css/style.css" />
+		<link href="https://fonts.googleapis.com/css2?family=Muli:wght@400;700&display=swap" rel="stylesheet" />
 	</head>
 	<body>
+		<!-- Desktop Header -->
 		<header class="navbar">
 			<div class="navbar_left">
-				<button aria-label="Open menu">
-					<img class="navbar_left-icon" src="./assests/icons/menu-icon.svg" alt="menu bar icon" />
+				<button class="menu-btn" aria-label="Open menu">
+					<img src="./assests/icons/menu-icon.svg" alt="menu bar icon" />
 				</button>
 				<a href="/home.html" aria-label="YouTube Home">
-					<img class="navbar_left-logo" src="./assests/images/logo.svg" alt="YouTube Logo" />
+					<img class="navbar_logo" src="./assests/images/logo.svg" alt="YouTube Logo" />
 				</a>
-				<form class="form_input">
-					<input class="navbar_center-input" type="search" placeholder="Search" />
-					<button class="navbar_center-btn" type="submit">
+				<form class="search_form">
+					<input class="search_input" type="search" placeholder="Search" />
+					<button class="search_btn" type="submit">
 						<img src="./assests/icons/search-icon.svg" alt="search icon" />
 					</button>
 				</form>
 			</div>
+
 			<div class="navbar_right">
 				<button aria-label="Upload video">
-					<img src="./assests/icons/video-camera-icon.svg" alt="" />
+					<img class="navbar_right-icon" src="./assests/icons/video-camera-icon.svg" alt="upload video" />
 				</button>
 				<button aria-label="YouTube apps">
-					<img src="./assests/icons/six-dots-icon.svg" alt="" />
+					<img class="navbar_right-icon" src="./assests/icons/six-dots-icon.svg" alt="apps" />
 				</button>
-				<button aria-label="Notifications">
-					<img src="./assests/icons/bell-icon.svg" alt="" />
+				<button aria-label="Notifications" class="notifications-btn">
+					<img class="navbar_right-icon" src="./assests/icons/bell-icon.svg" alt="notifications" />
+					<span class="notification-count">3</span>
 				</button>
 				<button aria-label="User profile">
-					<img class="navbar_right-avatar" src="./assests/images/avatar-img.svg" alt="Your profile picture" />
+					<img class="navbar_avatar" src="./assests/images/avatar-img.svg" alt="Your profile picture" />
 				</button>
 			</div>
 		</header>
 
+		<!-- Mobile Header -->
+		<header class="mobile_header">
+			<a href="/home.html" aria-label="YouTube Home">
+				<img class="navbar_logo" src="./assests/images/logo.svg" alt="YouTube Logo" />
+			</a>
+			<button class="search_btn" aria-label="Search">
+				<img src="./assests/icons/search-icon.svg" alt="search icon" />
+			</button>
+		</header>
+
 		<main class="container">
+			<!-- Sidebar Section -->
 			<nav class="sidebar">
 				<ul class="sidebar_menu">
 					<li class="active">
@@ -126,128 +141,265 @@
 				</button>
 			</nav>
 
-			<!-- FEED LAYOUT -->
-			<section class="feed">
-				<div class="feed_row-title">
-					<div class="feed_channel-info">
-						<img src="./assests/images/channel-avatar-1.svg" alt="channel avatar" />
-						<h2 class="row-title">Dollie Blair</h2>
+			<section class="content">
+				<!-- First Channel Section -->
+				<div class="channel_section">
+					<div class="channel_header">
+						<div class="channel_info">
+							<img src="./assests/images/channel-avatar-1.svg" alt="Dollie Blair" />
+							<h2>Dollie Blair</h2>
+						</div>
+						<div class="navigation_arrows">
+							<button>
+								<img class="navigation_arrows-icon" src="./assests/icons/left-icon.svg" alt="previous" />
+							</button>
+							<button>
+								<img class="navigation_arrows-icon" src="./assests/icons/right-icon.svg" alt="next" />
+							</button>
+						</div>
 					</div>
 
-					<div class="right_left-btns">
-						<button aria-label="Previous"><img src="./assests/icons/left-icon.svg" alt="" /></button>
-						<button aria-label="Next"><img src="./assests/icons/right-icon.svg" alt="" /></button>
-					</div>
-				</div>
-
-				<div class="feed_cards small">
-					<div class="card">
-						<img src="./assests/images/carousel-img-1.svg" alt="carousel img" />
-						<h3>A Brief History Of Creation</h3>
-						<p>80k views • 3 days ago • Dollie Blair</p>
-					</div>
-					<div class="card">
-						<img src="./assests/images/carousel-img-2.svg" alt="carousel img" />
-						<h3>Selecting The Right Hotel</h3>
-						<p>123k views • 1 month ago • Dollie Blair</p>
-					</div>
-					<div class="card">
-						<img src="./assests/images/carousel-img-3.svg" alt="carousel img" />
-						<h3>Asteroids</h3>
-						<p>25k views • 2 weeks ago • Dollie Blair</p>
-					</div>
-					<div class="card">
-						<img src="./assests/images/carousel-img-4.svg" alt="carousel img" />
-						<h3>Telescopes 101</h3>
-						<p>51k views • 6 months ago • Dollie Blair</p>
-					</div>
-					<div class="card">
-						<img src="./assests/images/carousel-img-5.svg" alt="carousel img" />
-						<h3>Medical Care Is Just</h3>
-						<p>18k views • 2 days ago • Dollie Blair</p>
-					</div>
-					<div class="card">
-						<img src="./assests/images/carousel-img-6.svg" alt="carousel img" />
-						<h3>Moon Gazing</h3>
-						<p>67k views • 4 months ago • Dollie Blair</p>
-					</div>
-				</div>
-
-				<div class="feed_row-title">
-					<h2>Recommended</h2>
-					<div class="right_left-btns">
-						<img src="./assests/icons/left-icon.svg" alt="chevron icon" />
-						<img src="./assests/icons/right-icon.svg" alt="chevron icon" />
-					</div>
-				</div>
-
-				<div class="feed_cards large">
-					<div class="card">
-						<img src="./assests/images/recommended-img-1.svg" alt="recommended img" />
-						<h3>Dude You Re Getting A Telescope</h3>
-						<p>34k views • 1 month ago • Gussie French</p>
-					</div>
-					<div class="card">
-						<img src="./assests/images/recommended-img-2.svg" alt="recommended img" />
-						<h3>Moon Gazing</h3>
-						<p>54k views • 11 months ago • Edward Osborne</p>
-					</div>
-					<div class="card">
-						<img src="./assests/images/recommended-img-3.svg" alt="recommended img" />
-						<h3>Moon Gazing</h3>
-						<p>125k views • 4 months ago • Dollie Blair</p>
-					</div>
-				</div>
-
-				<div class="feed_row-title">
-					<div class="feed_channel-info">
-						<img src="./assests/images/channel-avatar-2.svg" alt="channel avatar" />
-						<h2>Food & Drink</h2>
-						<p>Recommended channel for you</p>
-					</div>
-
-					<div class="feed_row-title-btns">
-						<button>Subscribe 2.3m</button>
-						<div class="right_left-btns">
-							<img src="./assests/icons/left-icon.svg" alt="chevron icon" />
-							<img src="./assests/icons/right-icon.svg" alt="chevron icon" />
+					<div class="videos_cards">
+						<div class="video_card">
+							<div class="video_thumbnail">
+								<img src="./assests/images/carousel-img-1.svg" alt="Asteroids" />
+								<div class="video_duration">5:32</div>
+							</div>
+							<div class="video_info">
+								<h3>Asteroids</h3>
+								<p class="video_meta">43k views · 12 days ago</p>
+								<p class="video_channel">Dollie Blair</p>
+							</div>
+						</div>
+						<div class="video_card">
+							<div class="video_thumbnail">
+								<img src="./assests/images/carousel-img-2.svg" alt="A Brief History Of Creation" />
+								<div class="video_duration">4:15</div>
+							</div>
+							<div class="video_info">
+								<h3>A Brief History Of Creation</h3>
+								<p class="video_meta">80k views · 3 days ago</p>
+								<p class="video_channel">Dollie Blair</p>
+							</div>
+						</div>
+						<div class="video_card">
+							<div class="video_thumbnail">
+								<img src="./assests/images/carousel-img-3.svg" alt="Telescopes 101" />
+								<div class="video_duration">6:40</div>
+							</div>
+							<div class="video_info">
+								<h3>Telescopes 101</h3>
+								<p class="video_meta">11k views · 6 months ago</p>
+								<p class="video_channel">Dollie Blair</p>
+							</div>
+						</div>
+						<div class="video_card">
+							<div class="video_thumbnail">
+								<img src="./assests/images/carousel-img-4.svg" alt="Selecting The Right Hotel" />
+								<div class="video_duration">8:00</div>
+							</div>
+							<div class="video_info">
+								<h3>Selecting The Right Hotel</h3>
+								<p class="video_meta">123k views · 1 month ago</p>
+								<p class="video_channel">Dollie Blair</p>
+							</div>
+						</div>
+						<div class="video_card">
+							<div class="video_thumbnail">
+								<img src="./assests/images/carousel-img-5.svg" alt="Medical Care Is Just" />
+								<div class="video_duration">1:45</div>
+							</div>
+							<div class="video_info">
+								<h3>Medical Care Is Just</h3>
+								<p class="video_meta">18k views · 2 days ago</p>
+								<p class="video_channel">Dollie Blair</p>
+							</div>
+						</div>
+						<div class="video_card">
+							<div class="video_thumbnail">
+								<img src="./assests/images/carousel-img-6.svg" alt="Moon Gazing" />
+								<div class="video_duration">2:12</div>
+							</div>
+							<div class="video_info">
+								<h3>Moon Gazing</h3>
+								<p class="video_meta">67k views · 4 months ago</p>
+								<p class="video_channel">Dollie Blair</p>
+							</div>
 						</div>
 					</div>
 				</div>
 
-				<div class="feed_cards small">
-					<div class="card">
-						<img src="./assests/images/channel-img-1.svg" alt="channel img" />
-						<h3>Astronomy Or Astrology</h3>
-						<p>240k views • 4 months ago • Food & Drink</p>
+				<!-- Recommended Section -->
+				<section class="recommended_section">
+					<div class="channel_header">
+						<h2>Recommended</h2>
+						<div class="navigation_arrows">
+							<button>
+								<img class="navigation_arrows-icon" src="./assests/icons/left-icon.svg" alt="previous" />
+							</button>
+							<button>
+								<img class="navigation_arrows-icon" src="./assests/icons/right-icon.svg" alt="next" />
+							</button>
+						</div>
 					</div>
-					<div class="card">
-						<img src="./assests/images/channel-img-2.svg" alt="channel img" />
-						<h3>Advertising Outdoors</h3>
-						<p>13k views • 2 months ago • Food & Drink</p>
+
+					<div class="videos_cards large">
+						<div class="video_card large">
+							<div class="video_thumbnail">
+								<img src="./assests/images/recommended-img-1.svg" alt="Dude You Re Getting A Telescope" />
+								<div class="video_duration">3:40</div>
+							</div>
+							<div class="video_info">
+								<h3>Dude You Re Getting A Telescope</h3>
+								<p class="video_meta">34k views · 5 months ago</p>
+								<p class="video_channel">Gussie French</p>
+							</div>
+						</div>
+						<div class="video_card large">
+							<div class="video_thumbnail">
+								<img src="./assests/images/recommended-img-2.svg" alt="Moon Gazing" />
+								<div class="video_duration">2:12</div>
+							</div>
+							<div class="video_info">
+								<h3>Moon Gazing</h3>
+								<p class="video_meta">54k views · 11 months ago</p>
+								<p class="video_channel">Edward Osborne</p>
+								<p class="video_author">Dollie Blair</p>
+							</div>
+						</div>
+						<div class="video_card large">
+							<div class="video_thumbnail">
+								<img src="./assests/images/recommended-img-3.svg" alt="Moon Gazing" />
+								<div class="video_duration">2:12</div>
+							</div>
+							<div class="video_info">
+								<h3>Moon Gazing</h3>
+								<p class="video_meta">125k views · 4 months ago</p>
+								<p class="video_channel">Dollie Blair</p>
+								<p class="video_author">Dollie Blair</p>
+							</div>
+						</div>
 					</div>
-					<div class="card">
-						<img src="./assests/images/channel-img-3.svg" alt="channel img" />
-						<h3>Radio Astronomy</h3>
-						<p>1.4M views • 1 month ago • Food & Drink</p>
+				</section>
+
+				<!-- Second Channel Section -->
+				<div class="channel_section">
+					<div class="channel_header">
+						<div class="channel_info">
+							<img src="./assests/images/channel-avatar-2.svg" alt="Food & Drink" />
+							<div class="channel_details">
+								<h2>Food & Drink</h2>
+								<p>Recommended channel for you</p>
+							</div>
+						</div>
+						<div class="channel_actions">
+							<button class="subscribe_btn">Subscribe 2.3m</button>
+							<div class="navigation_arrows">
+								<button>
+									<img class="navigation_arrows-icon" src="./assests/icons/left-icon.svg" alt="previous" />
+								</button>
+								<button>
+									<img class="navigation_arrows-icon" src="./assests/icons/right-icon.svg" alt="next" />
+								</button>
+							</div>
+						</div>
 					</div>
-					<div class="card">
-						<img src="./assests/images/channel-img-4.svg" alt="channel img" />
-						<h3>A Good Autoresponder</h3>
-						<p>25k views • 3 weeks ago • Food & Drink</p>
-					</div>
-					<div class="card">
-						<img src="./assests/images/channel-img-5.svg" alt="channel img" />
-						<h3>Baby Monitor Technology</h3>
-						<p>89k views • 6 months ago • Food & Drink</p>
-					</div>
-					<div class="card">
-						<img src="./assests/images/channel-img-6.svg" alt="channel img" />
-						<h3>Asteroids</h3>
-						<p>125k views • 1 month ago • Food & Drink</p>
+
+					<div class="videos_cards">
+						<div class="video_card">
+							<div class="video_thumbnail">
+								<img src="./assests/images/channel-img-1.svg" alt="Astronomy Or Astrology" />
+								<div class="video_duration">7:36</div>
+							</div>
+							<div class="video_info">
+								<h3>Astronomy Or Astrology</h3>
+								<p class="video_meta">240k views · 4 months ago</p>
+								<p class="video_channel">Food & Drink</p>
+							</div>
+						</div>
+
+						<div class="video_card">
+							<div class="video_thumbnail">
+								<img src="./assests/images/channel-img-2.svg" alt="Advertising Outdoors" />
+								<div class="video_duration">2:19</div>
+							</div>
+							<div class="video_info">
+								<h3>Advertising Outdoors</h3>
+								<p class="video_meta">13k views · 15 days ago</p>
+								<p class="video_channel">Food & Drink</p>
+							</div>
+						</div>
+
+						<div class="video_card">
+							<div class="video_thumbnail">
+								<img src="./assests/images/channel-img-3.svg" alt="Radio Astronomy" />
+								<div class="video_duration">9:05</div>
+							</div>
+							<div class="video_info">
+								<h3>Radio Astronomy</h3>
+								<p class="video_meta">1k views · 11 months ago</p>
+								<p class="video_channel">Food & Drink</p>
+							</div>
+						</div>
+
+						<div class="video_card">
+							<div class="video_thumbnail">
+								<img src="./assests/images/channel-img-4.svg" alt="A Good Autoresponder" />
+								<div class="video_duration">3:40</div>
+							</div>
+							<div class="video_info">
+								<h3>A Good Autoresponder</h3>
+								<p class="video_meta">45k views · 2 months ago</p>
+								<p class="video_channel">Food & Drink</p>
+							</div>
+						</div>
+
+						<div class="video_card">
+							<div class="video_thumbnail">
+								<img src="./assests/images/channel-img-5.svg" alt="Baby Monitor Technology" />
+								<div class="video_duration">1:56</div>
+							</div>
+							<div class="video_info">
+								<h3>Baby Monitor Technology</h3>
+								<p class="video_meta">86k views · 7 days ago</p>
+								<p class="video_channel">Food & Drink</p>
+							</div>
+						</div>
+
+						<div class="video_card">
+							<div class="video_thumbnail">
+								<img src="./assests/images/channel-img-6.svg" alt="Asteroids" />
+								<div class="video_duration">4:15</div>
+							</div>
+							<div class="video_info">
+								<h3>Asteroids</h3>
+								<p class="video_meta">123k views · 4 months ago</p>
+								<p class="video_channel">Dollie Blair</p>
+							</div>
+						</div>
 					</div>
 				</div>
 			</section>
 		</main>
+
+		<!-- Mobile Navigation Bar -->
+		<nav class="mobile_nav">
+			<div class="mobile_nav_item active">
+				<img src="./assests/icons/home-icon.svg" alt="home" />
+				<span>Home</span>
+			</div>
+			<div class="mobile_nav_item">
+				<img src="./assests/icons/trending-icon.svg" alt="trending" />
+				<span>Trending</span>
+			</div>
+			<div class="mobile_nav_item">
+				<img src="./assests/icons/subscriptions-icon.svg" alt="subscriptions" />
+				<span>Subscriptions</span>
+			</div>
+			<div class="mobile_nav_item">
+				<img src="./assests/icons/library-icon.svg" alt="library" />
+				<span>Library</span>
+			</div>
+		</nav>
 	</body>
 </html>
