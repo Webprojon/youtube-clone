@@ -1,0 +1,6 @@
+{
+	"routes": [
+		{ "src": "/", "dest": "/home.html" },
+		{ "src": "/channel", "dest": "/channel.html" }
+	]
+}
