@@ -22,7 +22,6 @@
 
 html,
 body {
-	height: 100%;
 	margin: 0 auto;
 	font-size: 16px;
 	max-width: 1920px;
@@ -56,14 +55,17 @@ h2 {
 }
 
 /* Navbar Styles */
-.desktop_navbar {
-	top: 0;
-	display: flex;
-	z-index: 100;
+header {
 	position: sticky;
+	top: 0;
+	z-index: 1000;
+	background: var(--color-bg);
+}
+
+.desktop_navbar {
+	display: flex;
 	padding: 20px 32px;
 	align-items: center;
-	background: var(--color-bg);
 	justify-content: space-between;
 }
 
@@ -405,14 +407,10 @@ h2 {
 
 /* Mobile Navbar Styles */
 .mobile_navbar {
-	top: 0;
-	position: sticky;
-	z-index: 100;
 	padding: 16px;
 	display: none;
 	align-items: center;
 	justify-content: space-between;
-	background: var(--color-bg);
 }
 
 .mobile_header-right {
