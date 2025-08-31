@@ -56,7 +56,7 @@ h2 {
 }
 
 /* Navbar Styles */
-.navbar {
+.desktop_navbar {
 	top: 0;
 	display: flex;
 	z-index: 100;
@@ -403,8 +403,8 @@ h2 {
 	font-size: 12px;
 }
 
-/* Mobile Header Styles */
-.mobile_header {
+/* Mobile Navbar Styles */
+.mobile_navbar {
 	top: 0;
 	position: sticky;
 	z-index: 100;
@@ -530,11 +530,11 @@ h2 {
 }
 
 @media (max-width: 700px) {
-	.mobile_header {
+	.mobile_navbar {
 		display: flex;
 	}
 
-	.navbar {
+	.desktop_navbar {
 		display: none;
 	}
 
@@ -552,7 +552,7 @@ h2 {
 }
 
 @media (max-width: 480px) {
-	.mobile_header {
+	.mobile_navbar {
 		padding: 10px 16px;
 	}
 

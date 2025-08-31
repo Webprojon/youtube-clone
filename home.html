@@ -8,58 +8,58 @@
 		<link href="https://fonts.googleapis.com/css2?family=Muli:wght@400;700&display=swap" rel="stylesheet" />
 	</head>
 	<body>
-		<!-- Desktop Header -->
-		<header class="navbar">
-			<div class="navbar_left">
-				<button class="menu-btn" aria-label="Open menu">
-					<img src="./assests/icons/menu-icon.svg" alt="menu bar icon" />
-				</button>
+		<header>	
+			<!-- Desktop Navbar -->
+			<section class="desktop_navbar">
+				<div class="navbar_left">
+					<button class="menu-btn" aria-label="Open menu">
+						<img src="./assests/icons/menu-icon.svg" alt="menu bar icon" />
+					</button>
+					<a href="/home.html" aria-label="YouTube Home">
+						<img class="navbar_logo" src="./assests/images/logo.svg" alt="YouTube Logo" />
+					</a>
+					<form class="search_form">
+						<input class="search_input" type="search" placeholder="Search" />
+						<button class="search_btn" type="submit">
+							<img src="./assests/icons/search-icon.svg" alt="search icon" />
+						</button>
+					</form>
+				</div>
+				<div class="navbar_right">
+					<button aria-label="Upload video">
+						<img class="navbar_right-icon" src="./assests/icons/video-camera-icon.svg" alt="upload video" />
+					</button>
+					<button aria-label="YouTube apps">
+						<img class="navbar_right-icon" src="./assests/icons/six-dots-icon.svg" alt="apps" />
+					</button>
+					<button aria-label="Notifications" class="notifications-btn">
+						<img class="navbar_right-icon" src="./assests/icons/bell-icon.svg" alt="notifications" />
+						<span class="notification-count">3</span>
+					</button>
+					<button aria-label="User profile">
+						<img class="navbar_avatar" src="./assests/images/avatar-img.svg" alt="Your profile picture" />
+					</button>
+				</div>
+			</section>
+
+			<!-- Mobile Navbar -->
+			<section class="mobile_navbar">
 				<a href="/home.html" aria-label="YouTube Home">
-					<img class="navbar_logo" src="./assests/images/logo.svg" alt="YouTube Logo" />
+					<img class="mobile_header-logo" src="./assests/images/logo.svg" alt="YouTube Logo" />
 				</a>
-				<form class="search_form">
-					<input class="search_input" type="search" placeholder="Search" />
-					<button class="search_btn" type="submit">
+				<div class="mobile_header-right">
+					<button aria-label="Search">
 						<img src="./assests/icons/search-icon.svg" alt="search icon" />
 					</button>
-				</form>
-			</div>
-
-			<div class="navbar_right">
-				<button aria-label="Upload video">
-					<img class="navbar_right-icon" src="./assests/icons/video-camera-icon.svg" alt="upload video" />
-				</button>
-				<button aria-label="YouTube apps">
-					<img class="navbar_right-icon" src="./assests/icons/six-dots-icon.svg" alt="apps" />
-				</button>
-				<button aria-label="Notifications" class="notifications-btn">
-					<img class="navbar_right-icon" src="./assests/icons/bell-icon.svg" alt="notifications" />
-					<span class="notification-count">3</span>
-				</button>
-				<button aria-label="User profile">
-					<img class="navbar_avatar" src="./assests/images/avatar-img.svg" alt="Your profile picture" />
-				</button>
-			</div>
-		</header>
-
-		<!-- Mobile Header -->
-		<header class="mobile_header">
-			<a href="/home.html" aria-label="YouTube Home">
-				<img class="mobile_header-logo" src="./assests/images/logo.svg" alt="YouTube Logo" />
-			</a>
-
-			<div class="mobile_header-right">
-				<button aria-label="Search">
-					<img src="./assests/icons/search-icon.svg" alt="search icon" />
-				</button>
-				<button aria-label="User profile">
-					<img class="navbar_avatar" src="./assests/images/avatar-img.svg" alt="Your profile picture" />
-				</button>
-			</div>
+					<button aria-label="User profile">
+						<img class="navbar_avatar" src="./assests/images/avatar-img.svg" alt="Your profile picture" />
+					</button>
+				</div>
+			</section>
 		</header>
 
 		<main class="container">
-			<!-- Sidebar Section -->
+			<!-- Sidebar -->
 			<nav class="sidebar">
 				<ul class="sidebar_menu">
 					<li class="active">
@@ -164,9 +164,8 @@
 							</button>
 						</div>
 					</div>
-
 					<div class="videos_cards">
-						<div class="video_card">
+						<article class="video_card">
 							<div class="video_thumbnail">
 								<img src="./assests/images/carousel-img-1.svg" alt="Asteroids" />
 								<div class="video_duration">5:32</div>
@@ -178,8 +177,8 @@
 									<p>Dollie Blair</p>
 								</div>
 							</div>
-						</div>
-						<div class="video_card">
+						</article>
+						<article class="video_card">
 							<div class="video_thumbnail">
 								<img src="./assests/images/carousel-img-2.svg" alt="A Brief History Of Creation" />
 								<div class="video_duration">4:15</div>
@@ -191,8 +190,8 @@
 									<p>Dollie Blair</p>
 								</div>
 							</div>
-						</div>
-						<div class="video_card">
+						</article>
+						<article class="video_card">
 							<div class="video_thumbnail">
 								<img src="./assests/images/carousel-img-3.svg" alt="Telescopes 101" />
 								<div class="video_duration">6:40</div>
@@ -204,8 +203,8 @@
 									<p>Dollie Blair</p>
 								</div>
 							</div>
-						</div>
-						<div class="video_card">
+						</article>
+						<article class="video_card">
 							<div class="video_thumbnail">
 								<img src="./assests/images/carousel-img-4.svg" alt="Selecting The Right Hotel" />
 								<div class="video_duration">8:00</div>
@@ -217,8 +216,8 @@
 									<p>Dollie Blair</p>
 								</div>
 							</div>
-						</div>
-						<div class="video_card">
+						</article>
+						<article class="video_card">
 							<div class="video_thumbnail">
 								<img src="./assests/images/carousel-img-5.svg" alt="Medical Care Is Just" />
 								<div class="video_duration">1:45</div>
@@ -230,8 +229,8 @@
 									<p>Dollie Blair</p>
 								</div>
 							</div>
-						</div>
-						<div class="video_card">
+						</article>
+						<article class="video_card">
 							<div class="video_thumbnail">
 								<img src="./assests/images/carousel-img-6.svg" alt="Moon Gazing" />
 								<div class="video_duration">2:12</div>
@@ -243,7 +242,7 @@
 									<p>Dollie Blair</p>
 								</div>
 							</div>
-						</div>
+						</article>
 					</div>
 				</section>
 
@@ -260,9 +259,8 @@
 							</button>
 						</div>
 					</div>
-
 					<div class="videos_cards large">
-						<div class="video_card large">
+						<article class="video_card large">
 							<div class="video_thumbnail">
 								<img src="./assests/images/recommended-img-1.svg" alt="Dude You Re Getting A Telescope" />
 								<div class="video_duration">3:40</div>
@@ -274,8 +272,8 @@
 									<p>Gussie French</p>
 								</div>
 							</div>
-						</div>
-						<div class="video_card large">
+						</article>
+						<article class="video_card large">
 							<div class="video_thumbnail">
 								<img src="./assests/images/recommended-img-2.svg" alt="Moon Gazing" />
 								<div class="video_duration">2:12</div>
@@ -287,8 +285,8 @@
 									<p>Edward Osborne</p>
 								</div>
 							</div>
-						</div>
-						<div class="video_card large">
+						</article>
+						<article class="video_card large">
 							<div class="video_thumbnail">
 								<img src="./assests/images/recommended-img-3.svg" alt="Moon Gazing" />
 								<div class="video_duration">2:12</div>
@@ -300,7 +298,7 @@
 									<p>Dollie Blair</p>
 								</div>
 							</div>
-						</div>
+						</article>
 					</div>
 				</section>
 
@@ -326,9 +324,8 @@
 							</div>
 						</div>
 					</div>
-
 					<div class="videos_cards">
-						<div class="video_card">
+						<article class="video_card">
 							<div class="video_thumbnail">
 								<img src="./assests/images/channel-img-1.svg" alt="Astronomy Or Astrology" />
 								<div class="video_duration">7:36</div>
@@ -340,8 +337,8 @@
 									<p>Food & Drink</p>
 								</div>
 							</div>
-						</div>
-						<div class="video_card">
+						</article>
+						<article class="video_card">
 							<div class="video_thumbnail">
 								<img src="./assests/images/channel-img-2.svg" alt="Advertising Outdoors" />
 								<div class="video_duration">2:19</div>
@@ -353,8 +350,8 @@
 									<p>Food & Drink</p>
 								</div>
 							</div>
-						</div>
-						<div class="video_card">
+						</article>
+						<article class="video_card">
 							<div class="video_thumbnail">
 								<img src="./assests/images/channel-img-3.svg" alt="Radio Astronomy" />
 								<div class="video_duration">9:05</div>
@@ -366,8 +363,8 @@
 									<p>Food & Drink</p>
 								</div>
 							</div>
-						</div>
-						<div class="video_card">
+						</article>
+						<article class="video_card">
 							<div class="video_thumbnail">
 								<img src="./assests/images/channel-img-4.svg" alt="A Good Autoresponder" />
 								<div class="video_duration">3:40</div>
@@ -379,8 +376,8 @@
 									<p>Food & Drink</p>
 								</div>
 							</div>
-						</div>
-						<div class="video_card">
+						</article>
+						<article class="video_card">
 							<div class="video_thumbnail">
 								<img src="./assests/images/channel-img-5.svg" alt="Baby Monitor Technology" />
 								<div class="video_duration">1:56</div>
@@ -392,8 +389,8 @@
 									<p>Food & Drink</p>
 								</div>
 							</div>
-						</div>
-						<div class="video_card">
+						</article>
+						<article class="video_card">
 							<div class="video_thumbnail">
 								<img src="./assests/images/channel-img-6.svg" alt="Asteroids" />
 								<div class="video_duration">4:15</div>
@@ -405,7 +402,7 @@
 									<p>Dollie Blair</p>
 								</div>
 							</div>
-						</div>
+						</article>
 					</div>
 				</section>
 			</section>
