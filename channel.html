@@ -3,8 +3,386 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Channel Page</title>
-		<link rel="stylesheet" href="./css/style.css" />
+		<title>YouTube - Channel Page</title>
+		<link rel="stylesheet" href="./css/channel.css" />
 	</head>
-	<body></body>
+	<body>
+		<!-- Navbar-->
+		<header>
+			<!-- Desktop Navbar -->
+			<section class="desktop_navbar">
+				<div class="navbar_left">
+					<button class="menu-btn" aria-label="Open menu">
+						<img src="./assests/icons/menu-icon.svg" alt="menu bar icon" />
+					</button>
+					<a href="/home.html" aria-label="YouTube Home">
+						<img class="navbar_logo" src="./assests/images/logo.svg" alt="YouTube Logo" />
+					</a>
+					<form class="search_form">
+						<input class="search_input" type="search" placeholder="Search" />
+						<button class="search_btn" type="submit">
+							<img src="./assests/icons/search-icon.svg" alt="search icon" />
+						</button>
+					</form>
+				</div>
+				<div class="navbar_right">
+					<button aria-label="Upload video">
+						<img class="navbar_right-icon" src="./assests/icons/video-camera-icon.svg" alt="upload video" />
+					</button>
+					<button aria-label="YouTube apps">
+						<img class="navbar_right-icon" src="./assests/icons/six-dots-icon.svg" alt="apps" />
+					</button>
+					<button aria-label="Notifications" class="notifications-btn">
+						<img class="navbar_right-icon" src="./assests/icons/bell-icon.svg" alt="notifications" />
+						<span class="notification-count">3</span>
+					</button>
+					<button aria-label="User profile">
+						<img class="navbar_avatar" src="./assests/images/avatar-img.svg" alt="Your profile picture" />
+					</button>
+				</div>
+			</section>
+
+			<!-- Mobile Navbar -->
+			<section class="mobile_navbar">
+				<a href="/home.html" aria-label="YouTube Home">
+					<img class="channel__mobile-logo" src="./assests/images/youtube-logo.svg" alt="YouTube Logo" />
+					<h3>Margaret Phelps</h3>
+				</a>
+				<div class="channel__mobile-header-right">
+					<button aria-label="Search">
+						<img src="./assests/icons/search-icon.svg" alt="search icon" />
+					</button>
+					<button aria-label="three dots">
+						<img src="./assests/icons/three-vertical-dots.svg" alt="three dots" />
+					</button>
+				</div>
+			</section>
+		</header>
+
+		<main class="container">
+			<!-- Sidebar -->
+			<nav class="sidebar">
+				<ul class="sidebar_menu">
+					<li class="active">
+						<a href="#home">
+							<img src="./assests/icons/home-icon.svg" alt="home" />
+							Home</a
+						>
+					</li>
+					<li>
+						<a href="#trending">
+							<img src="./assests/icons/trending-icon.svg" alt="trending" />
+							Trending</a
+						>
+					</li>
+					<li>
+						<a href="#/subscriptions">
+							<img src="./assests/icons/subscriptions-icon.svg" alt="subscriptions" />
+							Subscriptions</a
+						>
+					</li>
+					<li class="sidebar_menu-divider"></li>
+					<li>
+						<a href="#library">
+							<img src="./assests/icons/library-icon.svg" alt="library" />
+							Library</a
+						>
+					</li>
+					<li>
+						<a href="#/history">
+							<img src="./assests/icons/history-icon.svg" alt="history" />
+							History</a
+						>
+					</li>
+					<li>
+						<a href="#watch-later">
+							<img src="./assests/icons/watch-later-icon.svg" alt="watch later" />
+							Watch later</a
+						>
+					</li>
+					<li>
+						<a href="#favourites">
+							<img src="./assests/icons/favourites-icon.svg" alt="favourites" />
+							Favourites</a
+						>
+					</li>
+					<li>
+						<a href="#liked-videos">
+							<img src="./assests/icons/liked-videos-icon.svg" alt="liked videos" />
+							Liked videos</a
+						>
+					</li>
+					<li>
+						<a href="#music">
+							<img src="./assests/icons/music-icon.svg" alt="music" />
+							Music</a
+						>
+					</li>
+					<li>
+						<a href="#games">
+							<img src="./assests/icons/games-icon.svg" alt="games" />
+							Games</a
+						>
+					</li>
+					<li>
+						<a href="#show-more">
+							<img src="./assests/icons/show-more-icon.svg" alt="show more" />
+							Show more</a
+						>
+					</li>
+				</ul>
+
+				<h4 class="sidebar_title">Subscriptions</h4>
+				<ul class="sidebar_subscriptions">
+					<li><img src="./assests/images/gussie-singleton-img.svg" alt="gussie singleton icon" /> Gussie Singleton</li>
+					<li><img src="./assests/images/nora-francis-img.svg" alt="nora francis icon" /> Nora Francis</li>
+					<li><img src="./assests/images/belle-briggs-img.svg" alt="belle briggs icon" /> Belle Briggs</li>
+					<li><img src="./assests/images/eunice-cortez-img.svg" alt="eunice cortez icon" /> Eunice Cortez</li>
+					<li><img src="./assests/images/emma-hanson-img.svg" alt="emma hanson icon" /> Emma Hanson</li>
+					<li><img src="./assests/images/leah-berry-img.svg" alt="leah berry icon" /> Leah Berry</li>
+				</ul>
+
+				<button class="sidebar_settings-btn">
+					<img src="./assests/icons/settings-icon.svg" alt="settings icon" />
+					<span>Settings</span>
+				</button>
+			</nav>
+
+			<!-- Main Content -->
+			<section class="channel__content">
+				<!-- Channel Cover -->
+				<div class="channel__cover">
+					<img src="./assests/images/channel-cover-img.png" alt="Channel cover" />
+				</div>
+
+				<!-- Channel Info Section -->
+				<div class="channel__info">
+					<div class="channel__profile">
+						<img class="channel__avatar" src="./assests/images/margaret-phelps-avatar.png" alt="Margaret Phelps" />
+						<div class="channel__details">
+							<h1 class="channel__name">Margaret Phelps</h1>
+							<p class="channel__subscribers">245K subscribed</p>
+						</div>
+					</div>
+					<div class="channel__actions">
+						<button class="channel__bell-btn" aria-label="Notifications">
+							<img src="./assests/icons/bell-icon.svg" alt="Notifications" />
+						</button>
+						<button class="channel__subscribe-btn">Subscribe 2.3m</button>
+					</div>
+				</div>
+
+				<!-- Channel Navigation -->
+				<div class="channel__items">
+					<div>
+						<nav class="channel__nav">
+							<ul class="channel__nav-list">
+								<li class="channel__nav-item channel__nav-item--active">
+									<a href="#home" class="channel__nav-link">Home</a>
+								</li>
+								<li class="channel__nav-item">
+									<a href="#videos" class="channel__nav-link">Videos</a>
+								</li>
+								<li class="channel__nav-item">
+									<a href="#playlists" class="channel__nav-link">Playlists</a>
+								</li>
+								<li class="channel__nav-item">
+									<a href="#channels" class="channel__nav-link">Channels</a>
+								</li>
+								<li class="channel__nav-item">
+									<a href="#discussion" class="channel__nav-link">Discussion</a>
+								</li>
+								<li class="channel__nav-item">
+									<a href="#about" class="channel__nav-link">About</a>
+								</li>
+								<li>
+									<button class="channel__search-btn" aria-label="Search">
+										<img src="./assests/icons/search-icon.svg" alt="Search" />
+									</button>
+								</li>
+							</ul>
+
+							<!-- Mobile Nav -->
+							<ul class="channel__mobile-nav-list">
+								<li class="channel__nav-item channel__nav-item--active">
+									<a href="#home" class="channel__nav-link">Home</a>
+								</li>
+								<li class="channel__nav-item">
+									<a href="#videos" class="channel__nav-link">Videos</a>
+								</li>
+								<li class="channel__nav-item">
+									<a href="#playlists" class="channel__nav-link">Playlists</a>
+								</li>
+								<li class="channel__nav-item">
+									<button class="channel__chevrondown-btn" aria-label="Chevron down">
+										<img src="./assests/icons/chevron-down.png" alt="Chevron down" />
+									</button>
+								</li>
+							</ul>
+						</nav>
+
+						<div class="channel__featured-video">
+							<div class="channel__featured-thumbnail">
+								<img src="./assests/images/main-video-cover.png" alt="Featured video thumbnail" />
+								<span class="channel__featured-duration">7:36</span>
+							</div>
+							<div class="channel__featured-info">
+								<h2 class="channel__featured-title">Choosing The Best Audio Player Software For Your Computer</h2>
+								<p class="channel__featured-description">
+									Your cheap internet-based banner advertising will become one of the sought for ads there are. Today, the world of Internet advertising is
+									rapidly evolving beyond banner ads and intrusive pop-ups. Bayles A common medium for advertising on the Internet is the use of banner ads.
+								</p>
+								<p class="channel__featured-meta">11k views · 6 months ago</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="recommended__channel-sidebar">
+						<p class="recommended__channel-title">Recommended channel</p>
+						<div class="recommended__channel">
+							<div class="recommended__channel-item">
+								<img src="./assests/images/flora-benson-avatar.png" alt="Flora Benson" />
+								<span>Flora Benson</span>
+							</div>
+							<div class="recommended__channel-item">
+								<img src="./assests/images/violet-cobb-avatar.png" alt="Violet Cobb" />
+								<span>Violet Cobb</span>
+							</div>
+							<div class="recommended__channel-item">
+								<img src="./assests/images/phillip-mullins-avatar.png" alt="Phillip Mullins" />
+								<span>Phillip Mullins</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Main Content Area -->
+				<div class="channel__main">
+					<div class="channel__main-content">
+						<!-- Videos Section -->
+						<div class="channel__videos">
+							<div class="channel__videos-header">
+								<h3 class="channel__videos-title">Margaret Phelps videos</h3>
+								<div class="navigation_arrows">
+									<button>
+										<img class="navigation_arrows-icon" src="./assests/icons/left-icon.svg" alt="previous" />
+									</button>
+									<button>
+										<img class="navigation_arrows-icon" src="./assests/icons/right-icon.svg" alt="next" />
+									</button>
+								</div>
+							</div>
+
+							<div class="channel__videos-grid">
+								<!-- Video 1 -->
+								<div class="channel__video-card">
+									<div class="channel__video-thumbnail">
+										<img src="./assests/images/video-1-cover.png" alt="Video thumbnail" />
+										<span class="channel__video-duration">7:36</span>
+									</div>
+									<div class="channel__video-info">
+										<h4 class="channel__video-title">Astronomy Or Astrology</h4>
+										<div class="channel__video-meta">
+											<span class="channel__video-views">240k views · 4 months ago</span>
+											<span class="channel__video-category">Food & Drink</span>
+										</div>
+									</div>
+								</div>
+								<!-- Video 2 -->
+								<div class="channel__video-card">
+									<div class="channel__video-thumbnail">
+										<img src="./assests/images/video-2-cover.png" alt="Video thumbnail" />
+										<span class="channel__video-duration">2:19</span>
+									</div>
+									<div class="channel__video-info">
+										<h4 class="channel__video-title">Advertising Outdoors</h4>
+										<div class="channel__video-meta">
+											<span class="channel__video-views">13k views · 15 days ago</span>
+											<span class="channel__video-category">Food & Drink</span>
+										</div>
+									</div>
+								</div>
+								<!-- Video 3 -->
+								<div class="channel__video-card">
+									<div class="channel__video-thumbnail">
+										<img src="./assests/images/video-3-cover.png" alt="Video thumbnail" />
+										<span class="channel__video-duration">9:05</span>
+									</div>
+									<div class="channel__video-info">
+										<h4 class="channel__video-title">Radio Astronomy</h4>
+										<div class="channel__video-meta">
+											<span class="channel__video-views">1k views · 11 months ago</span>
+											<span class="channel__video-category">Food & Drink</span>
+										</div>
+									</div>
+								</div>
+								<!-- Video 4 -->
+								<div class="channel__video-card">
+									<div class="channel__video-thumbnail">
+										<img src="./assests/images/video-4-cover.png" alt="Video thumbnail" />
+										<span class="channel__video-duration">3:40</span>
+									</div>
+									<div class="channel__video-info">
+										<h4 class="channel__video-title">A Good Autoresponder</h4>
+										<div class="channel__video-meta">
+											<span class="channel__video-views">45k views · 2 months ago</span>
+											<span class="channel__video-category">Food & Drink</span>
+										</div>
+									</div>
+								</div>
+								<!-- Video 5 -->
+								<div class="channel__video-card">
+									<div class="channel__video-thumbnail">
+										<img src="./assests/images/video-5-cover.png" alt="Video thumbnail" />
+										<span class="channel__video-duration">1:56</span>
+									</div>
+									<div class="channel__video-info">
+										<h4 class="channel__video-title">Baby Monitor Technology</h4>
+										<div class="channel__video-meta">
+											<span class="channel__video-views">86k views · 7 days ago</span>
+											<span class="channel__video-category">Food & Drink</span>
+										</div>
+									</div>
+								</div>
+								<!-- Video 6 -->
+								<div class="channel__video-card">
+									<div class="channel__video-thumbnail">
+										<img src="./assests/images/video-6-cover.png" alt="Video thumbnail" />
+										<span class="channel__video-duration">4:15</span>
+									</div>
+									<div class="channel__video-info">
+										<h4 class="channel__video-title">Asteroids</h4>
+										<div class="channel__video-meta">
+											<span class="channel__video-views">123k views · 4 months ago</span>
+											<span class="channel__video-category">Dollie Blair</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<!-- Mobile Navigation Bar -->
+		<nav class="mobile_nav">
+			<a class="mobile_nav_item active" href="#home">
+				<img src="./assests/icons/home-icon.svg" alt="home" />
+				Home
+			</a>
+			<a class="mobile_nav_item" href="#trending">
+				<img src="./assests/icons/trending-icon.svg" alt="trending" />
+				Trending
+			</a>
+			<a class="mobile_nav_item" href="#subscriptions">
+				<img src="./assests/icons/subscriptions-icon.svg" alt="subscriptions" />
+				Subscriptions
+			</a>
+			<a class="mobile_nav_item" href="#library">
+				<img src="./assests/icons/library-icon.svg" alt="library" />
+				Library
+			</a>
+		</nav>
+	</body>
 </html>

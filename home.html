@@ -4,55 +4,55 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>YouTube - Home</title>
-		<link rel="stylesheet" href="./css/style.css" />
+		<link rel="stylesheet" href="./css/home.css" />
 		<link href="https://fonts.googleapis.com/css2?family=Muli:wght@400;700&display=swap" rel="stylesheet" />
 	</head>
 	<body>
-		<header>	
+		<header>
 			<!-- Desktop Navbar -->
-			<section class="desktop_navbar">
-				<div class="navbar_left">
-					<button class="menu-btn" aria-label="Open menu">
+			<section class="navbar navbar--desktop">
+				<div class="navbar__left">
+					<button class="navbar__menu-btn" aria-label="Open menu">
 						<img src="./assests/icons/menu-icon.svg" alt="menu bar icon" />
 					</button>
 					<a href="/home.html" aria-label="YouTube Home">
-						<img class="navbar_logo" src="./assests/images/logo.svg" alt="YouTube Logo" />
+						<img class="navbar__logo" src="./assests/images/logo.svg" alt="YouTube Logo" />
 					</a>
-					<form class="search_form">
-						<input class="search_input" type="search" placeholder="Search" />
-						<button class="search_btn" type="submit">
+					<form class="navbar__search-form">
+						<input class="navbar__search-input" type="search" placeholder="Search" />
+						<button class="navbar__search-btn" type="submit">
 							<img src="./assests/icons/search-icon.svg" alt="search icon" />
 						</button>
 					</form>
 				</div>
-				<div class="navbar_right">
+				<div class="navbar__right">
 					<button aria-label="Upload video">
-						<img class="navbar_right-icon" src="./assests/icons/video-camera-icon.svg" alt="upload video" />
+						<img class="navbar__icon" src="./assests/icons/video-camera-icon.svg" alt="upload video" />
 					</button>
 					<button aria-label="YouTube apps">
-						<img class="navbar_right-icon" src="./assests/icons/six-dots-icon.svg" alt="apps" />
+						<img class="navbar__icon" src="./assests/icons/six-dots-icon.svg" alt="apps" />
 					</button>
-					<button aria-label="Notifications" class="notifications-btn">
-						<img class="navbar_right-icon" src="./assests/icons/bell-icon.svg" alt="notifications" />
-						<span class="notification-count">3</span>
+					<button aria-label="Notifications" class="navbar__notifications-btn">
+						<img class="navbar__icon" src="./assests/icons/bell-icon.svg" alt="notifications" />
+						<span class="navbar__notification-count">3</span>
 					</button>
 					<button aria-label="User profile">
-						<img class="navbar_avatar" src="./assests/images/avatar-img.svg" alt="Your profile picture" />
+						<img class="navbar__avatar" src="./assests/images/avatar-img.svg" alt="Your profile picture" />
 					</button>
 				</div>
 			</section>
 
 			<!-- Mobile Navbar -->
-			<section class="mobile_navbar">
+			<section class="navbar navbar--mobile">
 				<a href="/home.html" aria-label="YouTube Home">
-					<img class="mobile_header-logo" src="./assests/images/logo.svg" alt="YouTube Logo" />
+					<img class="navbar__logo" src="./assests/images/logo.svg" alt="YouTube Logo" />
 				</a>
-				<div class="mobile_header-right">
+				<div class="navbar__right">
 					<button aria-label="Search">
 						<img src="./assests/icons/search-icon.svg" alt="search icon" />
 					</button>
 					<button aria-label="User profile">
-						<img class="navbar_avatar" src="./assests/images/avatar-img.svg" alt="Your profile picture" />
+						<img class="navbar__avatar" src="./assests/images/avatar-img.svg" alt="Your profile picture" />
 					</button>
 				</div>
 			</section>
@@ -61,69 +61,69 @@
 		<main class="container">
 			<!-- Sidebar -->
 			<nav class="sidebar">
-				<ul class="sidebar_menu">
-					<li class="active">
+				<ul class="sidebar__menu">
+					<li class="sidebar__menu-item sidebar__menu-item--active">
 						<a href="#home">
 							<img src="./assests/icons/home-icon.svg" alt="home" />
 							Home</a
 						>
 					</li>
-					<li>
+					<li class="sidebar__menu-item">
 						<a href="#trending">
 							<img src="./assests/icons/trending-icon.svg" alt="trending" />
 							Trending</a
 						>
 					</li>
-					<li>
+					<li class="sidebar__menu-item">
 						<a href="#/subscriptions">
 							<img src="./assests/icons/subscriptions-icon.svg" alt="subscriptions" />
 							Subscriptions</a
 						>
 					</li>
-					<li class="sidebar_menu-divider"></li>
-					<li>
+					<li class="sidebar__menu-divider"></li>
+					<li class="sidebar__menu-item">
 						<a href="#library">
 							<img src="./assests/icons/library-icon.svg" alt="library" />
 							Library</a
 						>
 					</li>
-					<li>
+					<li class="sidebar__menu-item">
 						<a href="#/history">
 							<img src="./assests/icons/history-icon.svg" alt="history" />
 							History</a
 						>
 					</li>
-					<li>
+					<li class="sidebar__menu-item">
 						<a href="#watch-later">
 							<img src="./assests/icons/watch-later-icon.svg" alt="watch later" />
 							Watch later</a
 						>
 					</li>
-					<li>
+					<li class="sidebar__menu-item">
 						<a href="#favourites">
 							<img src="./assests/icons/favourites-icon.svg" alt="favourites" />
 							Favourites</a
 						>
 					</li>
-					<li>
+					<li class="sidebar__menu-item">
 						<a href="#liked-videos">
 							<img src="./assests/icons/liked-videos-icon.svg" alt="liked videos" />
 							Liked videos</a
 						>
 					</li>
-					<li>
+					<li class="sidebar__menu-item">
 						<a href="#music">
 							<img src="./assests/icons/music-icon.svg" alt="music" />
 							Music</a
 						>
 					</li>
-					<li>
+					<li class="sidebar__menu-item">
 						<a href="#games">
 							<img src="./assests/icons/games-icon.svg" alt="games" />
 							Games</a
 						>
 					</li>
-					<li>
+					<li class="sidebar__menu-item">
 						<a href="#show-more">
 							<img src="./assests/icons/show-more-icon.svg" alt="show more" />
 							Show more</a
@@ -131,17 +131,17 @@
 					</li>
 				</ul>
 
-				<h4 class="sidebar_title">Subscriptions</h4>
-				<ul class="sidebar_subscriptions">
-					<li><img src="./assests/images/gussie-singleton-img.svg" alt="gussie singleton icon" /> Gussie Singleton</li>
-					<li><img src="./assests/images/nora-francis-img.svg" alt="nora francis icon" /> Nora Francis</li>
-					<li><img src="./assests/images/belle-briggs-img.svg" alt="belle briggs icon" /> Belle Briggs</li>
-					<li><img src="./assests/images/eunice-cortez-img.svg" alt="eunice cortez icon" /> Eunice Cortez</li>
-					<li><img src="./assests/images/emma-hanson-img.svg" alt="emma hanson icon" /> Emma Hanson</li>
-					<li><img src="./assests/images/leah-berry-img.svg" alt="leah berry icon" /> Leah Berry</li>
+				<h4 class="sidebar__title">Subscriptions</h4>
+				<ul class="sidebar__subscriptions">
+					<li class="sidebar__subscription-item"><img src="./assests/images/gussie-singleton-img.svg" alt="gussie singleton icon" /> Gussie Singleton</li>
+					<li class="sidebar__subscription-item"><img src="./assests/images/nora-francis-img.svg" alt="nora francis icon" /> Nora Francis</li>
+					<li class="sidebar__subscription-item"><img src="./assests/images/belle-briggs-img.svg" alt="belle briggs icon" /> Belle Briggs</li>
+					<li class="sidebar__subscription-item"><img src="./assests/images/eunice-cortez-img.svg" alt="eunice cortez icon" /> Eunice Cortez</li>
+					<li class="sidebar__subscription-item"><img src="./assests/images/emma-hanson-img.svg" alt="emma hanson icon" /> Emma Hanson</li>
+					<li class="sidebar__subscription-item"><img src="./assests/images/leah-berry-img.svg" alt="leah berry icon" /> Leah Berry</li>
 				</ul>
 
-				<button class="sidebar_settings-btn">
+				<button class="sidebar__settings-btn">
 					<img src="./assests/icons/settings-icon.svg" alt="settings icon" />
 					<span>Settings</span>
 				</button>
@@ -149,97 +149,97 @@
 
 			<section class="content">
 				<!-- First Channel Section -->
-				<section class="channel_section">
-					<div class="channel_header">
-						<div class="channel_info">
+				<section class="channel-section">
+					<div class="channel-section__header">
+						<div class="channel-section__info">
 							<img src="./assests/images/channel-avatar-1.svg" alt="Dollie Blair" />
 							<h2>Dollie Blair</h2>
 						</div>
-						<div class="navigation_arrows">
+						<div class="channel-section__navigation">
 							<button>
-								<img class="navigation_arrows-icon" src="./assests/icons/left-icon.svg" alt="previous" />
+								<img class="channel-section__nav-icon" src="./assests/icons/left-icon.svg" alt="previous" />
 							</button>
 							<button>
-								<img class="navigation_arrows-icon" src="./assests/icons/right-icon.svg" alt="next" />
+								<img class="channel-section__nav-icon" src="./assests/icons/right-icon.svg" alt="next" />
 							</button>
 						</div>
 					</div>
-					<div class="videos_cards">
-						<article class="video_card">
-							<div class="video_thumbnail">
+					<div class="channel-section__videos">
+						<article class="video-card">
+							<div class="video-card__thumbnail">
 								<img src="./assests/images/carousel-img-1.svg" alt="Asteroids" />
-								<div class="video_duration">5:32</div>
+								<div class="video-card__duration">5:32</div>
 							</div>
-							<div class="video_info">
-								<h3>Asteroids</h3>
-								<div class="video_meta">
-									<p>43k views · 12 days ago</p>
-									<p>Dollie Blair</p>
+							<div class="video-card__info">
+								<h3 class="video-card__title">Asteroids</h3>
+								<div class="video-card__meta">
+									<p class="video-card__views">43k views · 12 days ago</p>
+									<p class="video-card__channel">Dollie Blair</p>
 								</div>
 							</div>
 						</article>
-						<article class="video_card">
-							<div class="video_thumbnail">
+						<article class="video-card">
+							<div class="video-card__thumbnail">
 								<img src="./assests/images/carousel-img-2.svg" alt="A Brief History Of Creation" />
-								<div class="video_duration">4:15</div>
+								<div class="video-card__duration">4:15</div>
 							</div>
-							<div class="video_info">
-								<h3>A Brief History Of Creation</h3>
-								<div class="video_meta">
-									<p>80k views · 3 days ago</p>
-									<p>Dollie Blair</p>
+							<div class="video-card__info">
+								<h3 class="video-card__title">A Brief History Of Creation</h3>
+								<div class="video-card__meta">
+									<p class="video-card__views">80k views · 3 days ago</p>
+									<p class="video-card__channel">Dollie Blair</p>
 								</div>
 							</div>
 						</article>
-						<article class="video_card">
-							<div class="video_thumbnail">
+						<article class="video-card">
+							<div class="video-card__thumbnail">
 								<img src="./assests/images/carousel-img-3.svg" alt="Telescopes 101" />
-								<div class="video_duration">6:40</div>
+								<div class="video-card__duration">6:40</div>
 							</div>
-							<div class="video_info">
-								<h3>Telescopes 101</h3>
-								<div class="video_meta">
-									<p>11k views · 6 months ago</p>
-									<p>Dollie Blair</p>
+							<div class="video-card__info">
+								<h3 class="video-card__title">Telescopes 101</h3>
+								<div class="video-card__meta">
+									<p class="video-card__views">11k views · 6 months ago</p>
+									<p class="video-card__channel">Dollie Blair</p>
 								</div>
 							</div>
 						</article>
-						<article class="video_card">
-							<div class="video_thumbnail">
+						<article class="video-card">
+							<div class="video-card__thumbnail">
 								<img src="./assests/images/carousel-img-4.svg" alt="Selecting The Right Hotel" />
-								<div class="video_duration">8:00</div>
+								<div class="video-card__duration">8:00</div>
 							</div>
-							<div class="video_info">
-								<h3>Selecting The Right Hotel</h3>
-								<div class="video_meta">
-									<p>123k views · 1 month ago</p>
-									<p>Dollie Blair</p>
+							<div class="video-card__info">
+								<h3 class="video-card__title">Selecting The Right Hotel</h3>
+								<div class="video-card__meta">
+									<p class="video-card__views">123k views · 1 month ago</p>
+									<p class="video-card__channel">Dollie Blair</p>
 								</div>
 							</div>
 						</article>
-						<article class="video_card">
-							<div class="video_thumbnail">
+						<article class="video-card">
+							<div class="video-card__thumbnail">
 								<img src="./assests/images/carousel-img-5.svg" alt="Medical Care Is Just" />
-								<div class="video_duration">1:45</div>
+								<div class="video-card__duration">1:45</div>
 							</div>
-							<div class="video_info">
-								<h3>Medical Care Is Just</h3>
-								<div class="video_meta">
-									<p>18k views · 2 days ago</p>
-									<p>Dollie Blair</p>
+							<div class="video-card__info">
+								<h3 class="video-card__title">Medical Care Is Just</h3>
+								<div class="video-card__meta">
+									<p class="video-card__views">18k views · 2 days ago</p>
+									<p class="video-card__channel">Dollie Blair</p>
 								</div>
 							</div>
 						</article>
-						<article class="video_card">
-							<div class="video_thumbnail">
+						<article class="video-card">
+							<div class="video-card__thumbnail">
 								<img src="./assests/images/carousel-img-6.svg" alt="Moon Gazing" />
-								<div class="video_duration">2:12</div>
+								<div class="video-card__duration">2:12</div>
 							</div>
-							<div class="video_info">
-								<h3>Moon Gazing</h3>
-								<div class="video_meta">
-									<p>67k views · 4 months ago</p>
-									<p>Dollie Blair</p>
+							<div class="video-card__info">
+								<h3 class="video-card__title">Moon Gazing</h3>
+								<div class="video-card__meta">
+									<p class="video-card__views">67k views · 4 months ago</p>
+									<p class="video-card__channel">Dollie Blair</p>
 								</div>
 							</div>
 						</article>
@@ -247,55 +247,55 @@
 				</section>
 
 				<!-- Recommended Section -->
-				<section class="recommended_section">
-					<div class="channel_header">
+				<section class="recommended-section">
+					<div class="recommended-section__header">
 						<h2>Recommended</h2>
-						<div class="navigation_arrows">
+						<div class="recommended-section__navigation">
 							<button>
-								<img class="navigation_arrows-icon" src="./assests/icons/left-icon.svg" alt="previous" />
+								<img class="recommended-section__nav-icon" src="./assests/icons/left-icon.svg" alt="previous" />
 							</button>
 							<button>
-								<img class="navigation_arrows-icon" src="./assests/icons/right-icon.svg" alt="next" />
+								<img class="recommended-section__nav-icon" src="./assests/icons/right-icon.svg" alt="next" />
 							</button>
 						</div>
 					</div>
-					<div class="videos_cards large">
-						<article class="video_card large">
-							<div class="video_thumbnail">
+					<div class="recommended-section__videos">
+						<article class="video-card video-card--large">
+							<div class="video-card__thumbnail">
 								<img src="./assests/images/recommended-img-1.svg" alt="Dude You Re Getting A Telescope" />
-								<div class="video_duration">3:40</div>
+								<div class="video-card__duration">3:40</div>
 							</div>
-							<div class="video_info">
-								<h3>Dude You Re Getting A Telescope</h3>
-								<div class="video_meta">
-									<p>34k views · 5 months ago</p>
-									<p>Gussie French</p>
+							<div class="video-card__info">
+								<h3 class="video-card__title">Dude You Re Getting A Telescope</h3>
+								<div class="video-card__meta">
+									<p class="video-card__views">34k views · 5 months ago</p>
+									<p class="video-card__channel">Gussie French</p>
 								</div>
 							</div>
 						</article>
-						<article class="video_card large">
-							<div class="video_thumbnail">
+						<article class="video-card video-card--large">
+							<div class="video-card__thumbnail">
 								<img src="./assests/images/recommended-img-2.svg" alt="Moon Gazing" />
-								<div class="video_duration">2:12</div>
+								<div class="video-card__duration">2:12</div>
 							</div>
-							<div class="video_info">
-								<h3>Moon Gazing</h3>
-								<div class="video_meta">
-									<p>54k views · 11 months ago</p>
-									<p>Edward Osborne</p>
+							<div class="video-card__info">
+								<h3 class="video-card__title">Moon Gazing</h3>
+								<div class="video-card__meta">
+									<p class="video-card__views">54k views · 11 months ago</p>
+									<p class="video-card__channel">Edward Osborne</p>
 								</div>
 							</div>
 						</article>
-						<article class="video_card large">
-							<div class="video_thumbnail">
+						<article class="video-card video-card--large">
+							<div class="video-card__thumbnail">
 								<img src="./assests/images/recommended-img-3.svg" alt="Moon Gazing" />
-								<div class="video_duration">2:12</div>
+								<div class="video-card__duration">2:12</div>
 							</div>
-							<div class="video_info">
-								<h3>Moon Gazing</h3>
-								<div class="video_meta">
-									<p>125k views · 4 months ago</p>
-									<p>Dollie Blair</p>
+							<div class="video-card__info">
+								<h3 class="video-card__title">Moon Gazing</h3>
+								<div class="video-card__meta">
+									<p class="video-card__views">125k views · 4 months ago</p>
+									<p class="video-card__channel">Dollie Blair</p>
 								</div>
 							</div>
 						</article>
@@ -303,103 +303,101 @@
 				</section>
 
 				<!-- Second Channel Section -->
-				<section class="channel_section">
-					<div class="channel_header">
-						<div class="channel_info">
+				<section class="channel-section">
+					<div class="channel-section__header">
+						<div class="channel-section__info">
 							<img src="./assests/images/channel-avatar-2.svg" alt="Food & Drink" />
-							<div class="channel_details">
-								<h2>Food & Drink</h2>
-								<p>Recommended channel for you</p>
-							</div>
+							<h2>Food & Drink</h2>
+							<p class="channel-section__description">Recommended channel for you</p>
 						</div>
-						<div class="channel_actions">
-							<button class="subscribe_btn">Subscribe 2.3m</button>
-							<div class="navigation_arrows">
+						<div class="channel-section__actions">
+							<button class="channel-section__subscribe-btn">Subscribe 2.3m</button>
+							<div class="channel-section__navigation">
 								<button>
-									<img class="navigation_arrows-icon" src="./assests/icons/left-icon.svg" alt="previous" />
+									<img class="channel-section__nav-icon" src="./assests/icons/left-icon.svg" alt="previous" />
 								</button>
 								<button>
-									<img class="navigation_arrows-icon" src="./assests/icons/right-icon.svg" alt="next" />
+									<img class="channel-section__nav-icon" src="./assests/icons/right-icon.svg" alt="next" />
 								</button>
 							</div>
 						</div>
 					</div>
-					<div class="videos_cards">
-						<article class="video_card">
-							<div class="video_thumbnail">
+					<div class="channel-section__videos">
+						<article class="video-card">
+							<div class="video-card__thumbnail">
 								<img src="./assests/images/channel-img-1.svg" alt="Astronomy Or Astrology" />
-								<div class="video_duration">7:36</div>
+								<div class="video-card__duration">7:36</div>
 							</div>
-							<div class="video_info">
-								<h3>Astronomy Or Astrology</h3>
-								<div class="video_meta">
-									<p>240k views · 4 months ago</p>
-									<p>Food & Drink</p>
+							<div class="video-card__info">
+								<h3 class="video-card__title">Astronomy Or Astrology</h3>
+								<div class="video-card__meta">
+									<p class="video-card__views">240k views · 4 months ago</p>
+									<p class="video-card__channel">Food & Drink</p>
 								</div>
 							</div>
 						</article>
-						<article class="video_card">
-							<div class="video_thumbnail">
+						<article class="video-card">
+							<div class="video-card__thumbnail">
 								<img src="./assests/images/channel-img-2.svg" alt="Advertising Outdoors" />
-								<div class="video_duration">2:19</div>
+								<div class="video-card__duration">2:19</div>
 							</div>
-							<div class="video_info">
-								<h3>Advertising Outdoors</h3>
-								<div class="video_meta">
-									<p>13k views · 15 days ago</p>
-									<p>Food & Drink</p>
+							<div class="video-card__info">
+								<h3 class="video-card__title">Advertising Outdoors</h3>
+								<div class="video-card__meta">
+									<p class="video-card__views">13k views · 15 days ago</p>
+									<p class="video-card__channel">Food & Drink</p>
 								</div>
 							</div>
 						</article>
-						<article class="video_card">
-							<div class="video_thumbnail">
+						<article class="video-card">
+							<div class="video-card__thumbnail">
 								<img src="./assests/images/channel-img-3.svg" alt="Radio Astronomy" />
-								<div class="video_duration">9:05</div>
+								<div class="video-card__duration">9:05</div>
 							</div>
-							<div class="video_info">
-								<h3>Radio Astronomy</h3>
-								<div class="video_meta">
-									<p>1k views · 11 months ago</p>
-									<p>Food & Drink</p>
+							<div class="video-card__info">
+								<h3 class="video-card__title">Radio Astronomy</h3>
+								<div class="video-card__meta">
+									<p class="video-card__views">1k views · 11 months ago</p>
+									<p class="video-card__channel">Food & Drink</p>
 								</div>
 							</div>
 						</article>
-						<article class="video_card">
-							<div class="video_thumbnail">
+						<article class="video-card">
+							<div class="video-card__thumbnail">
 								<img src="./assests/images/channel-img-4.svg" alt="A Good Autoresponder" />
-								<div class="video_duration">3:40</div>
+								<div class="video-card__duration">3:40</div>
 							</div>
-							<div class="video_info">
-								<h3>A Good Autoresponder</h3>
-								<div class="video_meta">
-									<p>45k views · 2 months ago</p>
-									<p>Food & Drink</p>
+							<div class="video-card__info">
+								<h3 class="video-card__title">A Good Autoresponder</h3>
+								<div class="video-card__meta">
+									<p class="video-card__views">45k views · 2 months ago</p>
+									<p class="video-card__channel">Food & Drink</p>
 								</div>
 							</div>
 						</article>
-						<article class="video_card">
-							<div class="video_thumbnail">
+						<article class="video-card">
+							<div class="video-card__thumbnail">
 								<img src="./assests/images/channel-img-5.svg" alt="Baby Monitor Technology" />
-								<div class="video_duration">1:56</div>
+								<div class="video-card__duration">1:56</div>
 							</div>
-							<div class="video_info">
-								<h3>Baby Monitor Technology</h3>
-								<div class="video_meta">
-									<p>86k views · 7 days ago</p>
-									<p>Food & Drink</p>
+							<div class="video-card__info">
+								<h3 class="video-card__title">Baby Monitor Technology</h3>
+								<div class="video-card__meta">
+									<p class="video-card__views">86k views · 7 days ago</p>
+									<p class="video-card__channel">Food & Drink</p>
 								</div>
 							</div>
 						</article>
-						<article class="video_card">
-							<div class="video_thumbnail">
+						<article class="video-card">
+							<div class="video-card__thumbnail">
 								<img src="./assests/images/channel-img-6.svg" alt="Asteroids" />
-								<div class="video_duration">4:15</div>
+								<div class="video-card__duration">4:15</div>
 							</div>
-							<div class="video_info">
-								<h3>Asteroids</h3>
-								<div class="video_meta">
-									<p>123k views · 4 months ago</p>
-									<p>Dollie Blair</p>
+							<div class="video-card__info">
+								<h3 class="video-card__title">Asteroids</h3>
+								<div class="video-card__meta">
+									<p class="video-card__views">123k views · 4 months ago</p>
+									<p class="video-card__channel">Dollie Blair</p>
 								</div>
 							</div>
 						</article>
@@ -409,20 +407,20 @@
 		</main>
 
 		<!-- Mobile Navigation Bar -->
-		<nav class="mobile_nav">
-			<a class="mobile_nav_item active" href="#home">
+		<nav class="mobile-nav">
+			<a class="mobile-nav__item mobile-nav__item--active" href="#home">
 				<img src="./assests/icons/home-icon.svg" alt="home" />
 				Home
 			</a>
-			<a class="mobile_nav_item" href="#trending">
+			<a class="mobile-nav__item" href="#trending">
 				<img src="./assests/icons/trending-icon.svg" alt="trending" />
 				Trending
 			</a>
-			<a class="mobile_nav_item" href="#subscriptions">
+			<a class="mobile-nav__item" href="#subscriptions">
 				<img src="./assests/icons/subscriptions-icon.svg" alt="subscriptions" />
 				Subscriptions
 			</a>
-			<a class="mobile_nav_item" href="#library">
+			<a class="mobile-nav__item" href="#library">
 				<img src="./assests/icons/library-icon.svg" alt="library" />
 				Library
 			</a>
