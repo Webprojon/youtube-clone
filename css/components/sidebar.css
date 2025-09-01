@@ -1,0 +1,92 @@
+.sidebar {
+	padding: 20px 15px 15px 31px;
+	max-height: calc(100vh - 84px);
+	overflow-y: auto;
+	position: sticky;
+	top: 84px;
+}
+
+.sidebar::-webkit-scrollbar {
+	display: none;
+}
+
+.sidebar__menu {
+	padding: 0;
+	list-style: none;
+	margin: 0 0 14px 0;
+}
+
+.sidebar__menu-item {
+	padding: 10px 0;
+	color: var(--color-text-light);
+}
+
+.sidebar__menu-item a {
+	gap: 15px;
+	display: flex;
+	font-size: var(--font-size-base);
+	font-weight: 400;
+	align-items: center;
+}
+
+.sidebar__menu-item a img {
+	width: 20px;
+	height: 19px;
+}
+
+.sidebar__menu-item--active {
+	color: var(--color-red);
+}
+
+.sidebar__menu-divider {
+	margin-top: 8px;
+}
+
+.sidebar__title {
+	margin: 30px 0 15px 0;
+	color: var(--color-title);
+	font-size: var(--font-size-lg);
+	font-weight: 600;
+}
+
+.sidebar__subscriptions {
+	list-style: none;
+	padding: 0;
+}
+
+.sidebar__subscription-item {
+	font-size: var(--font-size-base);
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding: 6px 0;
+	color: var(--color-text-light);
+	cursor: pointer;
+}
+
+.sidebar__subscription-item img {
+	width: 26px;
+	height: 26px;
+	border-radius: 50%;
+}
+
+.sidebar__settings-btn {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	margin-top: 35px;
+	font-size: var(--font-size-base);
+	color: var(--color-text-muted);
+}
+
+.sidebar__settings-btn img {
+	width: 20px;
+	height: 20px;
+}
+
+/* Responsive Design for Sidebar */
+@media (max-width: 900px) {
+	.sidebar {
+		display: none;
+	}
+}

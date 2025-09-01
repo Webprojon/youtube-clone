@@ -1,0 +1,90 @@
+:root {
+	/* Colors */
+	--color-bg: #ffffff;
+	--color-text: #19202c;
+	--color-text-light: #898989;
+	--color-text-muted: #c2c2c2;
+	--color-red: #ff0000;
+	--color-red-hover: #cc0000;
+	--color-black: #000000;
+	--color-input-bg: #ebebeb;
+	--color-hover-bg: #f3f4f6;
+	--color-border: #e5e5e5;
+	--color-border-light: #f1f1f1;
+	--color-overlay: rgba(0, 0, 0, 0.3);
+	--color-title: #19202c;
+
+	/* Spacing */
+	--spacing-xs: 4px;
+	--spacing-sm: 8px;
+	--spacing-md: 16px;
+	--spacing-lg: 24px;
+	--spacing-xl: 32px;
+
+	/* Typography */
+	--font-size-xs: 10px;
+	--font-size-sm: 12px;
+	--font-size-md: 14px;
+	--font-size-sm-md: 13px;
+	--font-size-base: 16px;
+	--font-size-lg: 18px;
+	--font-size-lg-md: 20px;
+	--font-size-xl: 26px;
+
+	/* Border radius */
+	--radius-sm: 12px;
+	--radius-md: 14px;
+	--radius-lg: 20px;
+	--radius-xl: 22px;
+
+	/* Shadows */
+	--shadow-light: 0 1px 3px rgba(0, 0, 0, 0.1);
+	--shadow-medium: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+	/* Layout */
+	--container-max-width: 1920px;
+	--sidebar-width: 220px;
+	--grid-gap: 24px;
+}
+
+/* General Styles */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+	margin: 0 auto;
+	font-size: var(--font-size-base);
+	max-width: var(--container-max-width);
+	line-height: 1.255;
+	color: var(--color-text);
+	background: var(--color-bg);
+	font-family: "Muli", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+button {
+	border: none;
+	cursor: pointer;
+	background: transparent;
+	font-family: inherit;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+h2 {
+	font-weight: bold;
+	font-size: var(--font-size-xl);
+	color: var(--color-text);
+}
