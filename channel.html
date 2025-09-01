@@ -3,8 +3,8 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Channel Page</title>
-		<link rel="stylesheet" href="./css/style.css" />
+		<title>YouTube - Channel Page</title>
+		<link rel="stylesheet" href="./css/channel.css" />
 	</head>
 	<body>
 		<!-- Navbar-->
@@ -45,14 +45,15 @@
 			<!-- Mobile Navbar -->
 			<section class="mobile_navbar">
 				<a href="/home.html" aria-label="YouTube Home">
-					<img class="mobile_header-logo" src="./assests/images/logo.svg" alt="YouTube Logo" />
+					<img class="channel__mobile-logo" src="./assests/images/youtube-logo.svg" alt="YouTube Logo" />
+					<h3>Margaret Phelps</h3>
 				</a>
-				<div class="mobile_header-right">
+				<div class="channel__mobile-header-right">
 					<button aria-label="Search">
 						<img src="./assests/icons/search-icon.svg" alt="search icon" />
 					</button>
-					<button aria-label="User profile">
-						<img class="navbar_avatar" src="./assests/images/avatar-img.svg" alt="Your profile picture" />
+					<button aria-label="three dots">
+						<img src="./assests/icons/three-vertical-dots.svg" alt="three dots" />
 					</button>
 				</div>
 			</section>
@@ -197,6 +198,24 @@
 								<li>
 									<button class="channel__search-btn" aria-label="Search">
 										<img src="./assests/icons/search-icon.svg" alt="Search" />
+									</button>
+								</li>
+							</ul>
+
+							<!-- Mobile Nav -->
+							<ul class="channel__mobile-nav-list">
+								<li class="channel__nav-item channel__nav-item--active">
+									<a href="#home" class="channel__nav-link">Home</a>
+								</li>
+								<li class="channel__nav-item">
+									<a href="#videos" class="channel__nav-link">Videos</a>
+								</li>
+								<li class="channel__nav-item">
+									<a href="#playlists" class="channel__nav-link">Playlists</a>
+								</li>
+								<li class="channel__nav-item">
+									<button class="channel__chevrondown-btn" aria-label="Chevron down">
+										<img src="./assests/icons/chevron-down.png" alt="Chevron down" />
 									</button>
 								</li>
 							</ul>

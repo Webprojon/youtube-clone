@@ -247,72 +247,6 @@ header {
 	height: 20px;
 }
 
-/* Content Section Styles */
-.content {
-	padding-top: 20px;
-	overflow-x: hidden;
-}
-
-/* Channel Section Styles */
-.channel_section {
-	margin-bottom: 36px;
-}
-
-.channel_header {
-	display: flex;
-	align-items: center;
-	margin-bottom: 30px;
-	justify-content: space-between;
-}
-
-.channel_info {
-	gap: 20px;
-	display: flex;
-	align-items: center;
-}
-
-.channel_info img {
-	width: 50px;
-	height: 50px;
-	border-radius: 50%;
-}
-
-.channel_details {
-	gap: 20px;
-	display: flex;
-	align-items: center;
-}
-
-.channel_details p {
-	font-size: 16px;
-	font-weight: 400;
-	color: var(--color-text-muted);
-}
-
-.channel_actions {
-	gap: 10px;
-	display: flex;
-	align-items: center;
-}
-
-.subscribe_btn {
-	font-size: 16px;
-	font-weight: 400;
-	padding: 10px 20px;
-	border-radius: 20px;
-	color: var(--color-bg);
-	background: var(--color-red);
-}
-
-.subscribe_btn:hover {
-	background: #cc0000;
-}
-
-/* Recommended Section Style */
-.recommended_section {
-	margin-bottom: 36px;
-}
-
 /* Navigation Arrows Styles */
 .navigation_arrows {
 	gap: 10px;
@@ -324,87 +258,6 @@ header {
 .navigation_arrows-icon {
 	width: 28px;
 	height: 28px;
-}
-
-/* Video Cards Styles */
-.videos_cards {
-	gap: 20px;
-	display: grid;
-}
-
-.videos_cards:not(.large) {
-	grid-template-columns: repeat(6, 1fr);
-}
-
-.videos_cards.large {
-	grid-template-columns: repeat(3, 1fr);
-}
-
-/* Video Card Styles */
-.video_card {
-	cursor: pointer;
-	transition: transform 0.2s;
-}
-
-.video_card:hover {
-	transform: translateY(-2px);
-}
-
-.video_thumbnail {
-	position: relative;
-	margin-bottom: 10px;
-}
-
-.video_thumbnail img {
-	width: 100%;
-	height: 150px;
-	object-fit: cover;
-	border-radius: 14px;
-}
-
-.video_duration {
-	position: absolute;
-	bottom: 10px;
-	right: 8px;
-	font-size: 14px;
-	font-weight: 400;
-	padding: 3px 8px;
-	border-radius: 12px;
-	color: var(--color-bg);
-	background: rgba(0, 0, 0, 0.3);
-}
-
-.video_info h3 {
-	font-size: 16px;
-	font-weight: bold;
-	margin-bottom: 4px;
-	color: var(--color-text);
-}
-
-.video_meta {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	justify-content: space-between;
-}
-
-.video_meta p {
-	font-size: 13px;
-	margin-top: 2px;
-	color: var(--color-text-muted);
-}
-
-/* Large Video Cards Styles */
-.video_card.large .video_thumbnail img {
-	height: 250px;
-}
-
-.video_card.large .video_info h3 {
-	font-size: 16px;
-}
-
-.video_card.large .video_meta p {
-	font-size: 12px;
 }
 
 /* Mobile Navbar Styles */
@@ -429,56 +282,13 @@ header {
 	height: 25px;
 }
 
-.search_btn {
-	width: 18.21px;
-	height: 18.21px;
-}
-
-/* Mobile Navigation Bar Styles */
-.mobile_nav {
-	display: none;
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	height: 61px;
-	padding: 0 16px;
-	z-index: 1000;
-	align-items: center;
-	justify-content: space-between;
-	background: var(--color-bg);
-	border-top: 1px solid #f1f1f1;
-}
-
-.mobile_nav_item {
-	gap: 5px;
-	display: flex;
-	align-items: center;
-	flex-direction: column;
-	justify-content: center;
-	color: var(--color-text-light);
-}
-
-.mobile_nav_item img {
-	width: 20px;
-	height: 19px;
-}
-
-.mobile_nav_item {
-	font-size: 10px;
-	font-weight: 400;
-}
-
-.mobile_nav_item.active {
-	color: var(--color-red);
-}
-
 /****************************************** Channel Page Styles **************************************************/
 .channel__content {
 	width: 100%;
 	max-width: 100%;
 	padding: 8px 32px 0 0;
 	background: var(--color-bg);
+	overflow-x: hidden;
 }
 
 .channel__cover {
@@ -529,6 +339,12 @@ header {
 	color: var(--color-text);
 }
 
+.channel__subscribers {
+	font-size: 16px;
+	font-weight: 400;
+	color: var(--color-text-muted);
+}
+
 .channel__actions {
 	gap: 20px;
 	display: flex;
@@ -574,6 +390,7 @@ header {
 	display: flex;
 	list-style: none;
 	align-items: center;
+	flex: 1;
 }
 
 .channel__nav-item {
@@ -609,8 +426,20 @@ header {
 	height: 19px;
 }
 
+.channel__nav-actions {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+}
+
+.channel__nav-arrow img {
+	width: 10px;
+	height: 7px;
+}
+
 .channel__featured-video {
-	width: 1120px;
+	width: 100%;
+	max-width: 1120px;
 	height: 250px;
 	display: flex;
 	gap: 32px;
@@ -720,57 +549,38 @@ header {
 
 /* Videos Section */
 .channel__videos {
-	display: none;
-	margin-bottom: 40px;
+	margin: 50px 0;
 }
 
 .channel__videos-header {
 	display: flex;
-	align-items: center;
 	justify-content: space-between;
-	margin-bottom: 20px;
+	margin-bottom: 25px;
+	position: relative;
+	padding-right: 80px;
 }
 
 .channel__videos-title {
+	margin: 0;
 	font-size: 26px;
 	font-weight: 700;
 	color: var(--color-text);
-	margin: 0;
+}
+
+.channel__videos-header .navigation_arrows {
+	position: absolute;
+	top: 50%;
+	right: 4%;
+	transform: translateY(-50%);
 }
 
 .channel__videos-grid {
-	border: 1px solid red;
-	gap: 20px;
 	display: grid;
-	overflow-x: scroll;
-	max-width: 1700px;
-	position: absolute;
-	/*grid-template-columns: repeat(auto-fit, minmax(250px, 6fr));*/
-
-	/*gap: 40px;*/
-	/*display: grid;*/
-	grid-template-columns: repeat(6, 250px);
-	/*justify-content: start;*/
-	/*overflow-x: auto;*/
-	/*padding-right: 20px;*/
-}
-
-.channel__videos-grid::-webkit-scrollbar {
-	height: 6px;
-}
-
-.channel__videos-grid::-webkit-scrollbar-track {
-	border-radius: 3px;
-	background: #f1f1f1;
-}
-
-.channel__videos-grid::-webkit-scrollbar-thumb {
-	border-radius: 3px;
-	background: #c1c1c1;
-}
-
-.channel__videos-grid::-webkit-scrollbar-thumb:hover {
-	background: #a8a8a8;
+	grid-auto-flow: column;
+	grid-auto-columns: 250px;
+	gap: 40px;
+	overflow-x: auto;
+	width: 100%;
 }
 
 /* Video Cards */
@@ -778,6 +588,7 @@ header {
 	cursor: pointer;
 	transition: transform 0.2s;
 	width: 100%;
+	scroll-snap-align: start;
 }
 
 .channel__video-card:hover {
@@ -839,6 +650,63 @@ header {
 	text-align: right;
 }
 
+.channel__mobile-nav-list {
+	display: none;
+}
+
+.channel__mobile-logo {
+	width: 37px;
+	height: 25px;
+}
+
+.channel__mobile-header-right {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.channel__chevrondown-btn {
+	list-style: none;
+}
+
+/* Mobile Navigation Bar Styles */
+.mobile_nav {
+	display: none;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 61px;
+	z-index: 1000;
+	align-items: center;
+	justify-content: space-around;
+	background: var(--color-bg);
+	border-top: 1px solid #f1f1f1;
+}
+
+.mobile_nav_item {
+	gap: 5px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	color: var(--color-text-light);
+}
+
+.mobile_nav_item img {
+	width: 20px;
+	height: 19px;
+}
+
+.mobile_nav_item {
+	font-size: 10px;
+	font-weight: 400;
+}
+
+.mobile_nav_item.active {
+	color: var(--color-red);
+}
+
 /* Responsive Design Styles */
 @media (max-width: 1400px) {
 	.navbar_right {
@@ -846,21 +714,8 @@ header {
 		margin-left: 8px;
 	}
 
-	.videos_cards:not(.large) {
-		grid-template-columns: repeat(4, 1fr);
-	}
-
-	.videos_cards.large {
-		grid-template-columns: repeat(2, 1fr);
-	}
-
-	/* Channel page responsive adjustments */
 	.channel__featured-thumbnail {
 		max-width: 450px;
-	}
-
-	.channel__videos-grid {
-		grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 	}
 }
 
@@ -873,17 +728,8 @@ header {
 		width: 520px;
 	}
 
-	.videos_cards:not(.large) {
-		grid-template-columns: repeat(3, 1fr);
-	}
-
-	/* Channel page responsive adjustments */
 	.channel__featured-thumbnail {
 		max-width: 400px;
-	}
-
-	.channel__videos-grid {
-		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 	}
 
 	.channel__main {
@@ -904,27 +750,26 @@ header {
 		grid-template-columns: 1fr;
 	}
 
-	.content {
-		padding: 10px 32px;
-	}
-
 	.sidebar {
 		display: none;
-	}
-
-	.videos_cards:not(.large) {
-		grid-template-columns: repeat(2, 1fr);
-	}
-
-	.videos_cards.large {
-		grid-template-columns: 1fr;
 	}
 
 	.navigation_arrows {
 		margin-right: 0;
 	}
 
-	/* Channel page responsive adjustments */
+	.channel__content {
+		padding: 0 20px;
+	}
+
+	.channel__featured-video {
+		display: none;
+	}
+
+	.recommended__channel-sidebar {
+		display: none;
+	}
+
 	.channel__featured-thumbnail {
 		max-width: 100%;
 		height: 200px;
@@ -940,10 +785,6 @@ header {
 
 	.channel__sidebar {
 		width: 100%;
-	}
-
-	.channel__videos-grid {
-		grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
 	}
 
 	.channel__info {
@@ -967,19 +808,23 @@ header {
 		display: none;
 	}
 
-	.channel_header {
-		display: none;
+	.mobile_navbar a {
+		display: flex;
+		align-items: center;
+		gap: 10px;
 	}
 
-	.videos_cards:not(.large) {
-		grid-template-columns: repeat(2, 1fr);
+	.channel__mobile-logo {
+		width: 37px;
+		height: 25px;
 	}
 
-	.content {
-		padding: 0 16px;
+	.channel__mobile-header-right {
+		display: flex;
+		align-items: center;
+		gap: 10px;
 	}
 
-	/* Channel page responsive adjustments */
 	.channel__info {
 		padding: 0 16px;
 		flex-direction: column;
@@ -1005,6 +850,15 @@ header {
 		padding: 0 16px;
 	}
 
+	.channel__videos-grid {
+		display: grid;
+		grid-auto-flow: row;
+		grid-template-columns: 1fr;
+		grid-auto-columns: unset;
+		overflow-x: visible;
+		gap: 20px;
+	}
+
 	.channel__featured-title {
 		font-size: 20px;
 	}
@@ -1012,38 +866,37 @@ header {
 	.channel__videos-title {
 		font-size: 20px;
 	}
-
-	.channel__videos-grid {
-		grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-		gap: 15px;
-	}
 }
 
 @media (max-width: 480px) {
 	.mobile_navbar {
-		padding: 10px 16px;
+		padding: 16px;
 	}
 
-	.mobile_nav {
-		display: flex;
+	.channel__content {
+		position: relative;
+		margin-top: 10px;
+		padding: 0;
 	}
 
-	.videos_cards {
-		gap: 20px;
-	}
-
-	.channel_section {
-		margin-bottom: 75px;
-	}
-
-	.videos_cards:not(.large) {
-		grid-template-columns: 1fr;
-	}
-
-	/* Channel page responsive adjustments */
 	.channel__cover {
-		height: 200px;
-		margin-bottom: 20px;
+		height: 240px;
+		border-radius: 0;
+	}
+
+	.channel__cover img {
+		height: 100px;
+	}
+
+	.channel__info {
+		position: absolute;
+		top: 4%;
+	}
+
+	.channel__profile {
+		gap: 10px;
+		align-items: start;
+		flex-direction: column;
 	}
 
 	.channel__avatar {
@@ -1055,29 +908,62 @@ header {
 		font-size: 20px;
 	}
 
+	.channel__bell-btn {
+		display: none;
+	}
+
+	.channel__subscribe-btn {
+		font-size: 12px;
+		border-radius: 20px;
+		padding: 10px 15px;
+	}
+
+	.channel__items {
+		width: 100%;
+		height: 0;
+	}
+
 	.channel__nav-list {
-		gap: 20px;
+		display: none;
+	}
+
+	.channel__nav-link {
 		font-size: 14px;
+	}
+
+	.channel__mobile-nav-list {
+		display: flex;
+		gap: 40px;
+	}
+
+	.channel__mobile-nav-list .channel__nav-item {
+		list-style: none;
+	}
+
+	.channel__chevrondown-btn {
+		width: 10px;
+		height: 7px;
 	}
 
 	.channel__featured-thumbnail {
 		height: 180px;
 	}
 
-	.channel__featured-title {
-		font-size: 18px;
+	.channel__videos {
+		margin-bottom: 80px;
 	}
 
-	.channel__featured-description {
-		font-size: 14px;
-	}
-
-	.channel__videos-title {
-		font-size: 18px;
+	.channel__videos-header {
+		display: none;
 	}
 
 	.channel__videos-grid {
+		display: grid;
+		grid-auto-flow: row;
 		grid-template-columns: 1fr;
+		grid-auto-columns: unset;
+		overflow-x: visible;
+		gap: 16px;
 	}
 
 	.channel__video-title {
@@ -1088,249 +974,8 @@ header {
 	.channel__video-category {
 		font-size: 12px;
 	}
-}
 
-@media (max-width: 375px) {
-	.mobile_navbar {
-		padding: 12px 16px;
-	}
-
-	.mobile_header-logo {
-		width: 90px;
-		height: 20px;
-	}
-
-	.mobile_header-right {
-		gap: 16px;
-	}
-
-	.content {
-		padding: 0 12px;
-	}
-
-	.videos_cards {
-		gap: 16px;
-	}
-
-	.video_thumbnail img {
-		height: 120px;
-	}
-
-	.video_info h3 {
-		font-size: 14px;
-	}
-
-	.video_meta p {
-		font-size: 12px;
-	}
-
-	/* Channel page mobile optimizations */
-	.channel__cover {
-		height: 150px;
-		margin-bottom: 16px;
-	}
-
-	.channel__info {
-		padding: 0 12px;
-		gap: 16px;
-	}
-
-	.channel__avatar {
-		width: 50px;
-		height: 50px;
-	}
-
-	.channel__name {
-		font-size: 18px;
-	}
-
-	.channel__subscribe-btn {
-		font-size: 14px;
-		padding: 8px 16px;
-	}
-
-	.channel__nav {
-		padding: 0 12px 16px;
-	}
-
-	.channel__nav-list {
-		gap: 16px;
-	}
-
-	.channel__nav-link {
-		font-size: 16px;
-	}
-
-	.channel__main {
-		padding: 0 12px;
-	}
-
-	.channel__featured-thumbnail {
-		height: 160px;
-	}
-
-	.channel__featured-title {
-		font-size: 16px;
-	}
-
-	.channel__featured-description {
-		font-size: 13px;
-	}
-
-	.channel__videos-title {
-		font-size: 16px;
-	}
-
-	.channel__video-thumbnail img {
-		height: 120px;
-	}
-
-	.channel__video-title {
-		font-size: 13px;
-	}
-
-	.channel__video-views,
-	.channel__video-category {
-		font-size: 11px;
-	}
-
-	.channel__recommended-item img {
-		width: 40px;
-		height: 40px;
-	}
-
-	.channel__recommended-item span {
-		font-size: 14px;
-	}
-}
-
-@media (max-width: 320px) {
-	.mobile_navbar {
-		padding: 10px 12px;
-	}
-
-	.mobile_header-logo {
-		width: 80px;
-		height: 18px;
-	}
-
-	.mobile_header-right {
-		gap: 12px;
-	}
-
-	.content {
-		padding: 0 8px;
-	}
-
-	.videos_cards {
-		gap: 12px;
-	}
-
-	.video_thumbnail img {
-		height: 100px;
-	}
-
-	.video_info h3 {
-		font-size: 13px;
-		line-height: 1.2;
-	}
-
-	.video_meta p {
-		font-size: 11px;
-	}
-
-	/* Channel page extra small mobile optimizations */
-	.channel__cover {
-		height: 120px;
-		margin-bottom: 12px;
-	}
-
-	.channel__info {
-		padding: 0 8px;
-		gap: 12px;
-	}
-
-	.channel__avatar {
-		width: 45px;
-		height: 45px;
-	}
-
-	.channel__name {
-		font-size: 16px;
-	}
-
-	.channel__subscribe-btn {
-		font-size: 12px;
-		padding: 6px 12px;
-	}
-
-	.channel__nav {
-		padding: 0 8px 12px;
-	}
-
-	.channel__nav-list {
-		gap: 12px;
-	}
-
-	.channel__nav-link {
-		font-size: 14px;
-	}
-
-	.channel__main {
-		padding: 0 8px;
-	}
-
-	.channel__featured-thumbnail {
-		height: 140px;
-	}
-
-	.channel__featured-title {
-		font-size: 14px;
-	}
-
-	.channel__featured-description {
-		font-size: 12px;
-	}
-
-	.channel__videos-title {
-		font-size: 14px;
-	}
-
-	.channel__video-thumbnail img {
-		height: 100px;
-	}
-
-	.channel__video-title {
-		font-size: 12px;
-	}
-
-	.channel__video-views,
-	.channel__video-category {
-		font-size: 10px;
-	}
-
-	.channel__recommended-item img {
-		width: 35px;
-		height: 35px;
-	}
-
-	.channel__recommended-item span {
-		font-size: 13px;
-	}
-
-	/* Mobile navigation adjustments for very small screens */
 	.mobile_nav {
-		padding: 0 8px;
-		height: 55px;
-	}
-
-	.mobile_nav_item {
-		font-size: 9px;
-		gap: 3px;
-	}
-
-	.mobile_nav_item img {
-		width: 18px;
-		height: 17px;
+		display: flex;
 	}
 }
