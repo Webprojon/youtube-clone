@@ -1,0 +1,163 @@
+.channel-section__videos {
+}
+
+.video-card {
+	width: 250px;
+	cursor: pointer;
+	transition: transform 0.2s;
+}
+
+.video-card:hover {
+	transform: translateY(-2px);
+}
+
+.video-card--large {
+	width: 540px;
+}
+
+.video-card__thumbnail {
+	position: relative;
+	margin-bottom: 10px;
+}
+
+.video-card__thumbnail img {
+	width: 100%;
+	height: 150px;
+	object-fit: cover;
+	border-radius: var(--radius-md);
+}
+
+.video__duration {
+	position: absolute;
+	bottom: 10px;
+	right: 8px;
+	font-size: var(--font-size-md);
+	font-weight: 400;
+	padding: 3px 8px;
+	border-radius: var(--radius-sm);
+	color: var(--color-bg);
+	background: var(--color-overlay);
+}
+
+.video-card__info {
+	padding: 0 4px;
+}
+
+.video-card__title {
+	font-size: var(--font-size-base);
+	font-weight: bold;
+	margin-bottom: 4px;
+	color: var(--color-text);
+}
+
+.video-card__meta {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.video-card__views,
+.video-card__channel {
+	font-size: var(--font-size-sm-md);
+	margin-top: 2px;
+	color: var(--color-text-muted);
+}
+
+/* Large Video Cards Styles */
+.video-card--large .video-card__thumbnail img {
+	height: 250px;
+}
+
+.video-card--large .video-card__title {
+	font-size: var(--font-size-base);
+}
+
+.video-card--large .video-card__views,
+.video-card--large .video-card__channel {
+	font-size: var(--font-size-sm);
+}
+
+/* Featured Video Styles */
+.channel__featured-video {
+	width: 100%;
+	max-width: 1120px;
+	height: 250px;
+	display: flex;
+	gap: var(--spacing-xl);
+}
+
+.channel__featured-thumbnail {
+	position: relative;
+	width: 100%;
+	max-width: 540px;
+	height: 250px;
+	border-radius: var(--radius-md);
+	overflow: hidden;
+}
+
+.channel__featured-thumbnail img {
+	width: 100%;
+	height: 250px;
+	object-fit: cover;
+}
+
+.channel__featured-info {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.channel__featured-title {
+	font-size: var(--font-size-xl);
+	font-weight: 700;
+	line-height: 1.3;
+	color: var(--color-text);
+}
+
+.channel__featured-description {
+	font-size: var(--font-size-base);
+	color: var(--color-text);
+	opacity: 0.6;
+	line-height: 1.375;
+	margin: 0;
+}
+
+.channel__featured-meta {
+	font-size: var(--font-size-base);
+	color: var(--color-text-muted);
+	margin: 0;
+}
+
+/* Responsive Design for Video Cards */
+@media (max-width: 900px) {
+	.channel__featured-video {
+		display: none;
+	}
+
+	.channel__featured-thumbnail {
+		max-width: 100%;
+		height: 200px;
+	}
+
+	.channel__featured-video {
+		flex-direction: column;
+	}
+}
+
+@media (max-width: 700px) {
+	.channel__featured-title {
+		font-size: var(--font-size-lg-md);
+	}
+}
+
+@media (max-width: 480px) {
+	.video-card {
+		width: 100%;
+	}
+
+	.channel__featured-thumbnail {
+		height: 180px;
+	}
+}
